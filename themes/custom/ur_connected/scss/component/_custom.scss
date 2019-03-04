@@ -1,0 +1,45 @@
+/* Navbar Syling */
+
+.navbar-default {
+  background: $blue !important;
+  display: flex;
+  width: 100%;
+}
+.navbar.container {
+  max-width: 100vw;
+}
+
+.menu.menu--footer.nav {
+  display: flex;
+  background: $blue;
+  width: 100vw;
+  a {
+    font-size: 42pt;
+    color: #fff;
+  }
+  p{
+      font-size: 42pt;
+      color: #fff;
+
+  }
+}
+
+.footer {
+  width: 100vw;
+}
+
+/* Structured Content Block Region CSS */
+
+.structured-content.container {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+.structured-content.container>div {
+  margin-left: 0;
+  margin-right: 0;
+}
+.structured-content.container>div>div {
+  padding-left: 0;
+  padding-right: 0;
+}
