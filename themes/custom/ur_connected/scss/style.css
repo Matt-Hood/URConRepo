@@ -6393,4 +6393,19 @@ p:last-child,
   padding-left: 0;
   padding-right: 0; }
 
+.featured-event {
+  height: 400px;
+  width: 200px;
+  background: #1c62bc; }
+  .featured-event .featured-event-name p {
+    font-size: 16pt;
+    color: #fff;
+    text-align: left; }
+  .featured-event .event-short-description {
+    background: #fff;
+    height: 80px;
+    width: 150px; }
+  .featured-event .event-bottom-section {
+    background: lightgray; }
+
 /*# sourceMappingURL=style.css.map */

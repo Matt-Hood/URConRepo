@@ -1,0 +1,23 @@
+.featured-event {
+  height: 400px;
+  width: 200px;
+  background:  $blue;
+
+  .featured-event-name {
+    p {
+      font-size: 16pt;
+      color: #fff;
+      text-align: left;
+    }
+  }
+
+  .event-short-description {
+    background: #fff;
+    height: 80px;
+    width: 150px;
+  }
+ 
+.event-bottom-section {
+  background: lightgray;
+}
+}

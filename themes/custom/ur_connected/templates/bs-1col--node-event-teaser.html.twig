@@ -1,12 +1,21 @@
 <{{ wrapper }}{{ attributes }}>
   {{ title_suffix.contextual_links }}
   <{{ main.wrapper }}{{ main.attributes }}>
-    {{ main.content }}
+<div class="featured-event">
+<div class = "featured-event-name">
 {{ main.content.field_event_name }}
+</div>
+  <div class = "event-short-description">
 {{ main.content.field_short_description }}
+  </div>
+  <div class = "event-image img-circle">
 {{ main.content.field_image_ }}
+  </div>
+  <div class = "event-bottom-section">
 {{ main.content.field_proximity }}
 {{ main.content.field_data_range }}
 {{ main.content.field_details }}
+  </div>
+</div>
   </{{ main.wrapper }}>
 </{{ wrapper }}>
