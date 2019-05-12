@@ -1,0 +1,65 @@
+{#
+/**
+ * @file
+ * Bootstrap Layouts: "2 Columns (stacked)" template.
+ *
+ * Available layout variables:
+ * - wrapper: Wrapper element for the layout container.
+ * - attributes: Wrapper attributes for the layout container.
+ *
+ * Available region variables:
+ * - top
+ * - left
+ * - right
+ * - bottom
+ *
+ * Each region variable contains the following properties:
+ * - wrapper: The HTML element to use to wrap this region.
+ * - attributes: The HTML attributes to use on the wrapper for this region.
+ * - content: The content to go inside the wrapper for this region.
+ */
+#}
+<{{ wrapper }}{{ attributes }}>
+  {{ title_suffix.contextual_links }}
+
+  {% if top.content %}
+  <{{ top.wrapper }}{{ top.attributes }}>
+    {{ top.content }}
+  </{{ top.wrapper }}>
+  {% endif %}
+
+  {% if left.content %}
+  <{{ left.wrapper }}{{ left.attributes }}>
+    <h1>{{ left.content.field_event_name }} </h1>
+<div class = "flex-event-info" >
+    {{ right.content.field_company_name }} |
+    {{ right.content.field_date}} |
+    {{ right.content.field_cost}}
+</div>
+    <h1>Description</h1>
+    {{ left.content.body}}
+  </{{ left.wrapper }}>
+  {% endif %}
+
+  {% if right.content %}
+  <{{ right.wrapper }}{{ right.attributes }}>
+    <div class = "big-button">{{ right.content.field_rsvp_now }}</div>
+<h1>Details </h1>
+<div class = "details-container">
+    {{ right.content.field_company_name }}
+    {{ right.content.field_date }}
+    {{ right.content.field_cost }}
+    {{ right.content.field_category }}
+    {{ right.content.field_location }}
+</div>
+  </{{ right.wrapper }}>
+  {% endif %}
+
+  {% if bottom.content %}
+  <{{ bottom.wrapper }}{{ bottom.attributes }}>
+    <div class = "big-button">{{ bottom.content.field_sign_up }}</div>
+
+  </{{ bottom.wrapper }}>
+  {% endif %}
+
+</{{ wrapper }}>

@@ -1,23 +1,106 @@
 .featured-event {
-  height: 400px;
-  width: 200px;
+  height: 360px;
+  width: 313px;
   background:  $blue;
+  border-radius: 2%;
+  position: relative;
+  border-bottom: solid darkgray 3px;
 
   .featured-event-name {
+    a{
+      color: white !important;
+
+      font-size: 22pt;
+
+      padding-left: 3%;
+    }
     p {
       font-size: 16pt;
       color: #fff;
       text-align: left;
     }
+
   }
 
   .event-short-description {
-    background: #fff;
-    height: 80px;
-    width: 150px;
+    background: #fff !important;
+
+    height: 160px;
+
+    width: 250px;
+
+    margin-left: 17%;
+
+    border-radius: 2%;
+
+    p {
+      padding: 5%;
+    }
   }
- 
+ .event-image {
+
+   img {
+     border-radius: 50% !important;
+     border-color: black;
+     //transform: scale(.7, .7);
+     position: absolute;
+     left: -32px;
+     z-index: 1;
+
+     top: 50%;
+   }
+ }
 .event-bottom-section {
-  background: lightgray;
+  background: lightgray !important;
+  height: 160px;
+
+  width: 250px;
+
+  margin-left: 17%;
+  padding: 8%;
+  border-radius: 2%;
+  position: absolute;
+  bottom: 0;
+
+  .field--name-field-date{
+    padding-left: 5%;
+  }
+
+  p {
+    padding: 15%;
+  }
+
 }
+
+
+  .flex {
+    display: flex;
+  }
+}
+.field--name-field-details {
+  padding: 4% 0;
+
+  max-height: 50px;
+
+  max-width: 90px;
+
+  background: #efa00b;
+
+  text-align: center;
+
+  margin-top: 18%;
+
+  border-radius: 7%;
+
+  a {
+    color: white !important;
+  }
+}
+
+//Set height of background search block
+.paragraph--id--5 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

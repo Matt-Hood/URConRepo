@@ -1962,7 +1962,7 @@
         "version_normalized": "1.4.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/address",
+            "url": "https://git.drupalcode.org/project/address.git",
             "reference": "8.x-1.4"
         },
         "dist": {
@@ -2023,7 +2023,7 @@
         "version_normalized": "1.26.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/admin_toolbar",
+            "url": "https://git.drupalcode.org/project/admin_toolbar.git",
             "reference": "8.x-1.26"
         },
         "dist": {
@@ -2106,7 +2106,7 @@
         "version_normalized": "1.6.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/bg_image_formatter",
+            "url": "https://git.drupalcode.org/project/bg_image_formatter.git",
             "reference": "8.x-1.6"
         },
         "dist": {
@@ -2175,7 +2175,7 @@
         "version_normalized": "3.13.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/bootstrap",
+            "url": "https://git.drupalcode.org/project/bootstrap.git",
             "reference": "8.x-3.13"
         },
         "dist": {
@@ -2242,7 +2242,7 @@
         "version_normalized": "5.1.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/bootstrap_layouts",
+            "url": "https://git.drupalcode.org/project/bootstrap_layouts.git",
             "reference": "8.x-5.1"
         },
         "dist": {
@@ -2299,7 +2299,7 @@
         "version_normalized": "2.0.0.0-beta6",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/bootstrap_paragraphs",
+            "url": "https://git.drupalcode.org/project/bootstrap_paragraphs.git",
             "reference": "8.x-2.0-beta6"
         },
         "dist": {
@@ -2398,7 +2398,7 @@
         "version_normalized": "2.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/devel",
+            "url": "https://git.drupalcode.org/project/devel.git",
             "reference": "8.x-2.0"
         },
         "dist": {
@@ -2485,7 +2485,7 @@
         "version_normalized": "3.2.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/ds",
+            "url": "https://git.drupalcode.org/project/ds.git",
             "reference": "8.x-3.2"
         },
         "dist": {
@@ -2560,7 +2560,7 @@
         "version_normalized": "1.6.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/entity_reference_revisions",
+            "url": "https://git.drupalcode.org/project/entity_reference_revisions.git",
             "reference": "8.x-1.6"
         },
         "dist": {
@@ -2615,12 +2615,74 @@
         }
     },
     {
+        "name": "drupal/facets",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/facets.git",
+            "reference": "8.x-1.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.3.zip",
+            "reference": "8.x-1.3",
+            "shasum": "2ca517094a34112e8168746123d337a25da6a227"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "require-dev": {
+            "drupal/search_api": "~1.5"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.3",
+                "datestamp": "1551291083",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "See all contributors",
+                "homepage": "https://www.drupal.org/node/2348769/committers"
+            },
+            {
+                "name": "StryKaizer",
+                "homepage": "https://www.drupal.org/user/462700"
+            },
+            {
+                "name": "borisson_",
+                "homepage": "https://www.drupal.org/user/2393360"
+            }
+        ],
+        "description": "The Facet module allows site builders to easily create and manage faceted search interfaces.",
+        "homepage": "https://www.drupal.org/project/facets",
+        "support": {
+            "source": "git://git.drupal.org/project/facets.git",
+            "issues": "https://www.drupal.org/project/issues/facets",
+            "irc": "irc://irc.freenode.org/drupal-search-api"
+        }
+    },
+    {
         "name": "drupal/geofield",
         "version": "1.1.0",
         "version_normalized": "1.1.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/geofield",
+            "url": "https://git.drupalcode.org/project/geofield.git",
             "reference": "8.x-1.1"
         },
         "dist": {
@@ -2703,7 +2765,7 @@
         "version_normalized": "1.1.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/geysir",
+            "url": "https://git.drupalcode.org/project/geysir.git",
             "reference": "8.x-1.1"
         },
         "dist": {
@@ -2761,7 +2823,7 @@
         "version_normalized": "1.5.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/paragraphs",
+            "url": "https://git.drupalcode.org/project/paragraphs.git",
             "reference": "8.x-1.5"
         },
         "dist": {
@@ -2838,12 +2900,85 @@
         }
     },
     {
+        "name": "drupal/search_api",
+        "version": "1.12.0",
+        "version_normalized": "1.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/search_api.git",
+            "reference": "8.x-1.12"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.12.zip",
+            "reference": "8.x-1.12",
+            "shasum": "db203e2fdd669d6e9ff2c99688c0816d248a1fff"
+        },
+        "require": {
+            "drupal/core": "^8.5"
+        },
+        "require-dev": {
+            "drupal/search_api_autocomplete": "@dev",
+            "drupal/search_api_db": "*"
+        },
+        "suggest": {
+            "drupal/facets": "Adds the ability to create faceted searches.",
+            "drupal/search_api_autocomplete": "Allows adding autocomplete suggestions to search fields.",
+            "drupal/search_api_solr": "Adds support for using Apache Solr as a backend."
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.12",
+                "datestamp": "1552334285",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Thomas Seidl",
+                "homepage": "https://www.drupal.org/u/drunken-monkey"
+            },
+            {
+                "name": "Nick Veenhof",
+                "homepage": "https://www.drupal.org/u/nick_vh"
+            },
+            {
+                "name": "See other contributors",
+                "homepage": "https://www.drupal.org/node/790418/committers"
+            }
+        ],
+        "description": "Provides a generic framework for modules offering search capabilities.",
+        "homepage": "https://www.drupal.org/project/search_api",
+        "support": {
+            "source": "http://git.drupal.org/project/search_api.git",
+            "issues": "https://www.drupal.org/project/issues/search_api",
+            "irc": "irc://irc.freenode.org/drupal-search-api"
+        }
+    },
+    {
         "name": "drupal/viewsreference",
         "version": "1.4.0",
         "version_normalized": "1.4.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/viewsreference",
+            "url": "https://git.drupalcode.org/project/viewsreference.git",
             "reference": "8.x-1.4"
         },
         "dist": {

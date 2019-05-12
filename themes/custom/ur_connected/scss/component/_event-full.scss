@@ -1,0 +1,49 @@
+.flex-event-info {
+  display: flex;
+}
+
+.field--name-field-company-name::before {
+  content: "Organizer:";
+  display: inline-block;
+  padding: 0 5px;
+
+}
+
+.field--name-field-date::before {
+  content: 'Date:';
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.field--name-field-cost::before {
+  content: 'Admission:';
+  display: inline-block;
+  padding: 0 5px;
+}
+.field--name-field-category::before {
+  content: 'Category:';
+  display: inline-block;
+  padding: 0 5px;
+}
+.details-container {
+  width: 300px;
+  height: 500px;
+  border: #efa00b solid;
+}
+.big-button {
+  padding: 4% 2%;
+
+  max-height: 50px;
+
+  max-width: 200px;
+
+  background: #efa00b;
+
+  text-align: center;
+
+  border-radius: 7%;
+
+  a {
+    color: white !important;
+  }
+}

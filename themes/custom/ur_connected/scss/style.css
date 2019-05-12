@@ -6356,6 +6356,9 @@ p:last-child,
   .help-block:first-child, .control-group .help-inline:first-child {
     margin-top: 0; }
 
+.path-frontpage.page-node-type-paneled-page.has-glyphicons {
+  overflow-x: hidden; }
+
 /* Navbar Syling */
 .navbar-default {
   background: #1c62bc !important;
@@ -6394,18 +6397,104 @@ p:last-child,
   padding-right: 0; }
 
 .featured-event {
-  height: 400px;
-  width: 200px;
-  background: #1c62bc; }
+  height: 360px;
+  width: 313px;
+  background: #1c62bc;
+  border-radius: 2%;
+  position: relative;
+  border-bottom: solid darkgray 3px; }
+  .featured-event .featured-event-name a {
+    color: white !important;
+    font-size: 22pt;
+    padding-left: 3%; }
   .featured-event .featured-event-name p {
     font-size: 16pt;
     color: #fff;
     text-align: left; }
   .featured-event .event-short-description {
-    background: #fff;
-    height: 80px;
-    width: 150px; }
+    background: #fff !important;
+    height: 160px;
+    width: 250px;
+    margin-left: 17%;
+    border-radius: 2%; }
+    .featured-event .event-short-description p {
+      padding: 5%; }
+  .featured-event .event-image img {
+    border-radius: 50% !important;
+    border-color: black;
+    position: absolute;
+    left: -32px;
+    z-index: 1;
+    top: 50%; }
   .featured-event .event-bottom-section {
-    background: lightgray; }
+    background: lightgray !important;
+    height: 160px;
+    width: 250px;
+    margin-left: 17%;
+    padding: 8%;
+    border-radius: 2%;
+    position: absolute;
+    bottom: 0; }
+    .featured-event .event-bottom-section .field--name-field-date {
+      padding-left: 5%; }
+    .featured-event .event-bottom-section p {
+      padding: 15%; }
+  .featured-event .flex {
+    display: flex; }
+
+.field--name-field-details {
+  padding: 4% 0;
+  max-height: 50px;
+  max-width: 90px;
+  background: #efa00b;
+  text-align: center;
+  margin-top: 18%;
+  border-radius: 7%; }
+  .field--name-field-details a {
+    color: white !important; }
+
+.paragraph--id--5 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.flex-event-info {
+  display: flex; }
+
+.field--name-field-company-name::before {
+  content: "Organizer:";
+  display: inline-block;
+  padding: 0 5px; }
+
+.field--name-field-date::before {
+  content: 'Date:';
+  display: inline-block;
+  padding: 0 5px; }
+
+.field--name-field-cost::before {
+  content: 'Admission:';
+  display: inline-block;
+  padding: 0 5px; }
+
+.field--name-field-category::before {
+  content: 'Category:';
+  display: inline-block;
+  padding: 0 5px; }
+
+.details-container {
+  width: 300px;
+  height: 500px;
+  border: #efa00b solid; }
+
+.big-button {
+  padding: 4% 2%;
+  max-height: 50px;
+  max-width: 200px;
+  background: #efa00b;
+  text-align: center;
+  border-radius: 7%; }
+  .big-button a {
+    color: white !important; }
 
 /*# sourceMappingURL=style.css.map */
