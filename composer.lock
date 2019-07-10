@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32e4ed462b403d780334275c14b0799d",
+    "content-hash": "c4f773e95c5a83aa842423fd7a8a58e4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2280,6 +2280,68 @@
                 "issues": "https://www.drupal.org/project/issues/facets",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
             }
+        },
+        {
+            "name": "drupal/fullcalendar",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fullcalendar.git",
+                "reference": "5ff71c7147e5c30d9eb2d66f33a40f141b5cc342"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2+94-dev",
+                    "datestamp": "1528091885",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "aspilicious",
+                    "homepage": "https://www.drupal.org/user/172527"
+                },
+                {
+                    "name": "dakala",
+                    "homepage": "https://www.drupal.org/user/53175"
+                },
+                {
+                    "name": "hefox",
+                    "homepage": "https://www.drupal.org/user/426416"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                },
+                {
+                    "name": "tstoeckler",
+                    "homepage": "https://www.drupal.org/user/107158"
+                }
+            ],
+            "description": "Integrates the Fullcalender Library from https://fullcalendar.io",
+            "homepage": "https://www.drupal.org/project/fullcalendar",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fullcalendar",
+                "issues": "http://drupal.org/project/issues/fullcalendar"
+            },
+            "time": "2018-05-18T14:59:34+00:00"
         },
         {
             "name": "drupal/geofield",
@@ -6353,12 +6415,12 @@
             "version": "v1.6.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikey179/vfsStream.git",
+                "url": "https://github.com/bovigo/vfsStream.git",
                 "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
+                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
                 "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
                 "shasum": ""
             },
@@ -8039,6 +8101,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/fullcalendar": 20,
         "behat/mink": 20,
         "behat/mink-selenium2-driver": 20
     },

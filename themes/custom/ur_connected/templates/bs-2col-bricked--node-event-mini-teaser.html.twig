@@ -27,19 +27,19 @@
 
   {% if top.content %}
   <{{ top.wrapper }}{{ top.attributes }}>
-    {{ top.content }}
+    {{ top.content.field_event_name }}
   </{{ top.wrapper }}>
   {% endif %}
 
   {% if top_left.content %}
   <{{ top_left.wrapper }}{{ top_left.attributes }}>
-    {{ top_left.content }}
+    {{ top_left.content.field_image_ }}
   </{{ top_left.wrapper }}>
   {% endif %}
 
   {% if top_right.content %}
   <{{ top_right.wrapper }}{{ top_right.attributes }}>
-    {{ top_right.content }}
+    {{ top_right.content.field_date }}
   </{{ top_right.wrapper }}>
   {% endif %}
 
@@ -57,7 +57,7 @@
 
   {% if bottom_right.content %}
   <{{ bottom_right.wrapper }}{{ bottom_right.attributes }}>
-    {{ bottom_right.content }}
+    {{ bottom_right.content.field_details }}
   </{{ bottom_right.wrapper }}>
   {% endif %}
 
