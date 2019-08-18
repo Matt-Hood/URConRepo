@@ -22,8 +22,10 @@
  * - content: The content to go inside the wrapper for this region.
  */
 #}
+<div class = "event-mini-teaser">
 <{{ wrapper }}{{ attributes }}>
   {{ title_suffix.contextual_links }}
+
 
   {% if top.content %}
   <{{ top.wrapper }}{{ top.attributes }}>
@@ -36,23 +38,11 @@
     {{ top_left.content.field_image_ }}
   </{{ top_left.wrapper }}>
   {% endif %}
-
+<div class = "event-mini-teaser-inner">
   {% if top_right.content %}
   <{{ top_right.wrapper }}{{ top_right.attributes }}>
     {{ top_right.content.field_date }}
   </{{ top_right.wrapper }}>
-  {% endif %}
-
-  {% if middle.content %}
-  <{{ middle.wrapper }}{{ middle.attributes }}>
-    {{ middle.content }}
-  </{{ middle.wrapper }}>
-  {% endif %}
-
-  {% if bottom_left.content %}
-  <{{ bottom_left.wrapper }}{{ bottom_left.attributes }}>
-    {{ bottom_left.content }}
-  </{{ bottom_left.wrapper }}>
   {% endif %}
 
   {% if bottom_right.content %}
@@ -60,11 +50,7 @@
     {{ bottom_right.content.field_details }}
   </{{ bottom_right.wrapper }}>
   {% endif %}
-
-  {% if bottom.content %}
-  <{{ bottom.wrapper }}{{ bottom.attributes }}>
-    {{ bottom.content }}
-  </{{ bottom.wrapper }}>
-  {% endif %}
+</div>
 
 </{{ wrapper }}>
+</div>
