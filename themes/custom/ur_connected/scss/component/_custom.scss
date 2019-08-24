@@ -1,21 +1,110 @@
-/* Navbar Syling */
+/* Font Declarations */
+@font-face {
+  font-family: $font-san;
+  src: url(../fonts/PTS55F.ttf);
+  src: url('../fonts/PTS55F.ttf') format('truetype');
+}
+@font-face {
+  font-family: $font-sarif;
+  src: url(../fonts/PTF55F.ttf);
+  src: url('../fonts/PTF55F.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: $font-myriad;
+  src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+  src: url('../fonts/MYRIADPRO-REGULAR.OTF') format('otf');
+}
+
+/* Navbar Syling */
+body {
+  margin-top: -1px;
+  overflow-x: hidden;
+}
+p {
+  font-family: $font-myriad;
+}
+h3 {
+  font-family: $font-sarif;
+  font-size: 38pt;
+  font-weight: 900;
+}
 .navbar-default {
   background: $blue !important;
   display: flex;
   width: 100%;
 }
+.narbar {
+  margin-bottom: -4px;
+}
 .navbar.container {
   max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 80px;
+  margin-bottom: -4px !important;
+  ul {
+    li {
+      a {
+        font-family: $font-san;
+        font-weight: 900;
+        font-size: 32pt;
+        color: #fff;
+        padding: 22px 15px 36px 50px;
+        //padding-top: 22px;
+        //padding-bottom: 15px;
+        //padding-left: 36px;
+        //padding-right: 50px;
+      }
+      a:hover {
+        //border-bottom: 4px solid $orange;
+        color: $orange;
+      }
+    }
+  }
 }
+.page-header {
+  display: none;
+}
+
+//Login Custon Code
+
+.menu--main > li:nth-child(4) {
+
+  font-family: $font-san;
+
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-radius: 11px;
+  margin: 2.7% 0;
+
+  margin-left: 0px;
+
+  margin-left: 30px;
+  a {
+    padding: 5px 5px 5px 5px !important;
+    font-size: 18px !important;
+    background: $orange;
+    border-radius: 7px;
+  }
+
+}
+
+
 
 .menu.menu--footer.nav {
   display: flex;
-  background: $blue;
+  //background: $blue;
   width: 100vw;
+  justify-content: center;
   a {
-    font-size: 42pt;
+    font-size: 37pt;
     color: #fff;
+    font-family: $font-myriad;
+    font-weight: 900;
   }
   p{
       font-size: 42pt;
@@ -23,9 +112,16 @@
 
   }
 }
-
+.logo.navbar-btn.pull-left {
+  position: absolute;
+  left: 0;
+}
+.name.navbar-brand {
+  display: none;
+}
 .footer {
   width: 100vw;
+  background-image: url("/sites/default/files/Footer.png");
 }
 
 /* Structured Content Block Region CSS */

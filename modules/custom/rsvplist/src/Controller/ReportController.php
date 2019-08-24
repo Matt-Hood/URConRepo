@@ -24,6 +24,7 @@ class ReportController extends ControllerBase {
         $select->join('users_field_data', 'u', 'r.uid = u.uid');
         // Join the node table, so we can get the event's name.
         $select->join('node_field_data', 'n', 'r.nid = n.nid');
+
         // Select these specific fields for the output.
         $select->addField('u', 'name', 'username');
         $select->addField('n', 'title');

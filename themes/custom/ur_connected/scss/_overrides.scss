@@ -71,3 +71,115 @@ p:last-child,
 .path-frontpage.page-node-type-paneled-page.has-glyphicons{
   overflow-x: hidden;
 }
+.make-orange {
+  color: $orange !important;;
+}
+/**
+--------------------------- HOME PAGE STYLING ----------------------------
+ */
+
+/* Hero Panel */
+.paragraph--type--xeno-hero {
+
+  padding-top: 140px;
+
+}
+.field.field--name-bp-block.field--type-entity-reference.field--label-hidden.field--items {
+
+  display: flex;
+  justify-content: center;
+#block-bartik-search {
+  width: 800px;
+  border: 10px solid rgba(0,0,0, .2);
+  border-radius: 30px;
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  #edit-keys {
+    height: 50px;
+    //width: 85px;
+    border-top-left-radius: 20px;
+
+    border-bottom-left-radius: 20px;
+
+  }
+
+  .button {
+    height: 50px;
+    width: 85px;
+    border-top-right-radius: 20px;
+
+    border-bottom-right-radius: 20px;
+    background: $blue;
+
+    .glyphicon-search::before {
+
+      content: "Go!";
+      font-family: $font-san;
+      font-size: 16pt;
+
+    }
+
+  }
+}
+
+
+}
+#edit-keys::placeholder {
+  font-size: 16pt;
+  text-align: center;
+  font-family: $font-san;
+}
+/*Hero Panel Text */
+.field.field--name-bp-unrestricted.field--type-text-long.field--label-hidden.field--item {
+  h2 {
+    text-align: center;
+    font-size: 66pt;
+    color: $blue;
+    font-family: $font-sarif;
+    font-style: italic;
+    height: 50px;
+    text-shadow: 3px 5px 2px #474747;
+  }
+  //text-align: center;
+
+}
+
+/* Featured Events Carousel */
+.carousel-control {
+
+  color: black;
+
+}
+.carousel-control.right, .carousel-control.left {
+
+  background-image: unset;
+}
+.paragraph--id--17 {
+  padding-bottom: 5%;
+
+
+}
+
+.clearfix.paragraph.paragraph--type--bp-columns.paragraph--view-mode--default.paragraph--id--3.paragraph--width--wide {
+  background: lighten($light-blue, 55%);
+}
+/* About Us Section */
+.paragraph--id--1 {
+  font-family: $font-myriad;
+  font-weight: 900;
+  font-size: 20px;
+
+  h3 {
+    font-family: $font-myriad;
+  }
+}
+
+
+/* My Events PAge Calendar */
+.clearfix.paragraph.paragraph--type--bp-block.paragraph--view-mode--default.paragraph--id--10 {
+  width: 75%;
+  margin: 0 auto;
+}

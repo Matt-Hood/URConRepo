@@ -1,9 +1,22 @@
 .event-mini-teaser {
   max-width: 300px;
   background-color: $blue;
-  max-height: 110px;
-  margin: 4% 0;
+  max-height: 130px;
+  margin: 4% 7%;
+  position: relative;
+  .p-button {
+    bottom: -23px;
+    left: -36px;
+    a {
+      width: 85px;
 
+    }
+  }
+  .field--name-field-event-name {
+    color: #ffffff;
+    font-size: 16pt;
+    font-family: $font-sarif;
+  }
   .field--name-field-date::before {
     content: '';
   }
@@ -26,5 +39,6 @@
     position: relative;
     right: -13%;
     border-radius: 4%;
+    height: 85px;
   }
 }

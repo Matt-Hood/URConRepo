@@ -4,8 +4,11 @@
   background:  $blue;
   border-radius: 2%;
   position: relative;
-  border-bottom: solid darkgray 3px;
-
+  border-bottom: solid $blue 5px;
+  margin-left: 15%;
+  :hover {
+    //box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
   .featured-event-name {
     a{
       color: white !important;
@@ -41,17 +44,17 @@
 
    img {
      border-radius: 50% !important;
-     border-color: black;
+     border: 2px solid black;
      //transform: scale(.7, .7);
      position: absolute;
      left: -32px;
      z-index: 1;
 
-     top: 50%;
+     top: 43%;
    }
  }
 .event-bottom-section {
-  background: lightgray !important;
+  //background: lightgray !important;
   height: 160px;
 
   width: 250px;
@@ -61,6 +64,16 @@
   border-radius: 2%;
   position: absolute;
   bottom: 0;
+  background-color: $light-gray;
+  border-top: 1px solid darken($light-gray, 8%);
+
+  .glyphicon.glyphicon-user, .glyphicon.glyphicon-calendar {
+    padding-top: 10px;
+  }
+
+
+
+
 
   .field--name-field-date{
     padding-left: 5%;
@@ -78,20 +91,10 @@
   }
 }
 .field--name-field-details {
-  padding: 4% 0;
 
-  max-height: 50px;
+.p-button {
 
-  max-width: 90px;
-
-  background: #efa00b;
-
-  text-align: center;
-
-  margin-top: 18%;
-
-  border-radius: 7%;
-
+}
   a {
     color: white !important;
   }
@@ -103,4 +106,46 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.p-button {
+  background-color: $orange;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.5s ease-in-out;
+  font: $font-myriad;
+  /*height: 65px;*/
+  //border-radius: 2%;
+  //margin: 0px 17px;
+  margin: 20px;
+  margin-left: 45px;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  top: auto;
+  left: auto;
+  text-align: center;
+  //min-width: 240px;
+ // padding: 0 30px; //margin: 0 auto;
+  display: table;
+  border-radius: 10px;
+  a {
+    font: $font-myriad;
+    font-size: 12pt;
+   // min-width: 240px;
+    color: $blue;
+    font-weight: 900;
+    padding-left: 0px;
+    line-height: 30px;
+    padding: 5px 5px;
+    display: block;
+  }
+  a:hover {
+    text-decoration: none;
+
+  }
+
+}
+.p-button:hover {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  color: lighten($blue, 50%);
 }
